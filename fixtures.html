@@ -3,121 +3,260 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixtures & Results</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Football Fixtures</title>
+  <link rel="stylesheet" href="./style.css">
+
+  </style>
 </head>
 <body>
-
-<header>
-  <div class="logo">⚽ Football Hub</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="transfers.html">Transfers</a></li>
-      <li><a href="fixtures.html" class="active">Fixtures</a></li>
-      <li><a href="table.html">Tables</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="news">
-  <h2>Fixtures & Results</h2>
-  <div class="news-container">
-    <article>
-      <h3>Completed Matches (Matchweek 2)</h3>
-      <p>West Ham 1–5 Chelsea</p>
-      <p>Manchester City 0–2 Tottenham</p>
-      <p>Bournemouth 1–0 Wolves</p>
-      <p>Brentford 1–0 Aston Villa</p>
-      <p>Burnley 2–0 Sunderland</p>
-      <p>Arsenal 5–0 Leeds United</p>
-      <p>Crystal Palace 1–1 Nottingham Forest</p>
-      <p>Everton 2–0 Brighton</p>
-      <p>Fulham 1–1 Manchester United</p>
-    </article>
-
-    <article>
-      <h3>Upcoming Fixture</h3>
-      <p><b>Newcastle vs Liverpool</b> – Tonight, 25 August 2025, 8:00 PM</p>
-    </article>
-  </div>
-</main>
-<main class="news">
-  <h2>Fixtures & Results</h2>
-  <div class="news-container">
-
-    <article>
-      <h3>La Liga</h3>
-      <p><b>Completed:</b> Barcelona 3–1 Villarreal</p>
-      <p>Real Madrid 2–0 Valencia</p>
-      <p>Sevilla 1–1 Real Sociedad</p>
-      <p><b>Upcoming:</b> Atletico Madrid vs Getafe (26 Aug)</p>
-    </article>
-
- 
-    <article>
-      <h3>Serie A</h3>
-      <p><b>Completed:</b> Inter Milan 2–1 Torino</p>
-      <p>Napoli 3–0 Fiorentina</p>
-      <p>Juventus 2–2 AC Milan</p>
-      <p><b>Upcoming:</b> Roma vs Lazio (27 Aug)</p>
-    </article>
-
-    <main>
-    <h2>📅Upcoming La Liga Fixtures – August 2025</h2>
-
-    <section>
-      <h3>Monday, August 25, 2025</h3>
+    <header>
+    <div class="logo">⚽ Football Hub</div>
+    <nav>
       <ul>
-        <li><strong>Athletic Club</strong> vs <strong>Rayo Vallecano</strong> – 18:30 CEST</li>
-        <li><strong>Sevilla FC</strong> vs <strong>Getafe CF</strong> – 20:30 CEST</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="transfers.html">Transfers</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li><a href="table.html" class="active">Tables</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
+<h1>Football Fixtures 25/26</h1>
 
-    <section>
-      <h3>Wednesday, August 27, 2025</h3>
-      <ul>
-        <li><strong>Celta Vigo</strong> vs <strong>Real Betis</strong> – 20:00 CEST</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Friday, August 29, 2025</h3>
-      <ul>
-        <li><strong>Elche CF</strong> vs <strong>Levante UD</strong> – 18:30 CEST</li>
-        <li><strong>Valencia CF</strong> vs <strong>Getafe CF</strong> – 20:30 CEST</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Saturday, August 30, 2025</h3>
-      <ul>
-        <li><strong>Alavés</strong> vs <strong>Atlético Madrid</strong> – 16:00 CEST</li>
-        <li><strong>Real Oviedo</strong> vs <strong>Real Sociedad</strong> – 18:00 CEST</li>
-        <li><strong>Girona FC</strong> vs <strong>Sevilla FC</strong> – 18:30 CEST</li>
-        <li><strong>Real Madrid</strong> vs <strong>RCD Mallorca</strong> – 20:30 CEST</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Sunday, August 31, 2025</h3>
-      <ul>
-        <li><strong>Celta Vigo</strong> vs <strong>Villarreal CF</strong> – 16:00 CEST</li>
-        <li><strong>Real Betis</strong> vs <strong>Athletic Club</strong> – 18:00 CEST</li>
-        <li><strong>RCD Espanyol</strong> vs <strong>CA Osasuna</strong> – 18:30 CEST</li>
-        <li><strong>Rayo Vallecano</strong> vs <strong>FC Barcelona</strong> – 20:30 CEST</li>
-      </ul>
-    </section>
-  </main>
-
-  </div>
-</main>
+<div class="league-buttons">
+  <button onclick="showLeague('premier')">Premier League</button>
+  <button onclick="showLeague('laliga')">La Liga</button>
+  <button onclick="showLeague('seriea')">Serie A</button>
+  <button onclick="showLeague('bundesliga')">Bundesliga</button>
+  <button onclick="showLeague('ligue1')">Ligue 1</button>
+</div>
 
 
-<footer>
-  <p>&copy; 2025 Football Hub | All Rights Reserved</p>
-</footer>
+
+
+
+<div id="premier" class="fixtures">
+  <h2>Premier League</h2>
+  <h3>Played Matches</h3>
+  <table>
+    <tr>
+      <th>Matchday</th>
+      <th>Date</th>
+      <th>Home</th>
+      <th>Away</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>15 Aug 2025</td>
+      <td>Liverpool</td>
+      <td>Bournemouth</td>
+      <td>4 - 2</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>15 Aug 2025</td>
+      <td>Manchester City</td>
+      <td>Tottenham Hotspur</td>
+      <td>0 - 2</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>16 Aug 2025</td>
+      <td>Arsenal</td>
+      <td>Fulham</td>
+      <td>1 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>16 Aug 2025</td>
+      <td>West Ham United</td>
+      <td>Chelsea</td>
+      <td>1 - 5</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>17 Aug 2025</td>
+      <td>Brighton & Hove Albion</td>
+      <td>Fulham</td>
+      <td>1 - 1</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>17 Aug 2025</td>
+      <td>Sunderland</td>
+      <td>West Ham United</td>
+      <td>1 - 1</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>17 Aug 2025</td>
+      <td>Tottenham Hotspur</td>
+      <td>Burnley</td>
+      <td>2 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>17 Aug 2025</td>
+      <td>Wolverhampton Wanderers</td>
+      <td>Manchester City</td>
+      <td>0 - 4</td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="laliga" class="fixtures">
+  <h2>La Liga</h2>
+  <h3>Played Matches</h3>
+  <table>
+    <tr>
+      <th>Matchday</th>
+      <th>Date</th>
+      <th>Home</th>
+      <th>Away</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>15 Aug 2025</td>
+      <td>Girona</td>
+      <td>Rayo Vallecano</td>
+      <td>1 - 3</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>15 Aug 2025</td>
+      <td>Villarreal</td>
+      <td>Real Oviedo</td>
+      <td>2 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>16 Aug 2025</td>
+      <td>RCD Mallorca</td>
+      <td>FC Barcelona</td>
+      <td>0 - 3</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>16 Aug 2025</td>
+      <td>Deportivo Alavés</td>
+      <td>Levante UD</td>
+      <td>2 - 1</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>16 Aug 2025</td>
+      <td>Valencia CF</td>
+      <td>Real Sociedad</td>
+      <td>1 - 1</td>
+      </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>17 Aug 2025</td>
+      <td>Celta</td>
+      <td>Getafe CF</td>
+      <td>0 - 2</td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="seriea" class="fixtures">
+  <h2>Serie A</h2>
+  <h3>Played Matches</h3>
+  <table>
+    <tr>
+      <th>Matchday</th>
+      <th>Date</th>
+      <th>Home</th>
+      <th>Away</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>Sassuolo</td>
+      <td>Napoli</td>
+      <td>0 - 2</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>Genoa</td>
+      <td>Lecce</td>
+      <td>0 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>Roma</td>
+      <td>Bologna</td>
+      <td>1 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>AC Milan</td>
+      <td>Cremonese</td>
+      <td>1 - 2</td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="bundesliga" class="fixtures">
+  <h2>Bundesliga</h2>
+  <h3>Played Matches</h3>
+  <table>
+    <tr>
+      <th>Matchday</th>
+      <th>Date</th>
+      <th>Home</th>
+      <th>Away</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>22 Aug 2025</td>
+      <td>Bayern Munich</td>
+      <td>RB Leipzig</td>
+      <td>6 - 0</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>1. FC Heidenheim</td>
+      <td>Wolfsburg</td>
+      <td>1 - 3</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>Union Berlin</td>
+      <td>Stuttgart</td>
+      <td>2 - 1</td>
+    </tr>
+    <tr>
+      <td>Matchday 1</td>
+      <td>23 Aug 2025</td>
+      <td>Bayer Leverkusen</td>
+      <td>Hoffenheim</td>
+      <td>1 - 2</td>
+    </tr>
+
+::contentReference[oaicite:0]{index=0}
+<script>
+  function showLeague(leagueId) {
+    const leagues = document.querySelectorAll('.fixtures');
+    leagues.forEach(l => l.style.display = 'none'); 
+    document.getElementById(leagueId).style.display = 'block'; 
+  }
+
+  
+  showLeague('premier');
+</script>
 
 </body>
 </html>

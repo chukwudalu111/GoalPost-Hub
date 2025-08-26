@@ -238,3 +238,57 @@ nav a.active {
   font-size: 1rem;
 }
 
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+    .league-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .league-buttons button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .league-buttons button:hover {
+      background-color: #002f6c;
+    }
+    .fixtures {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    .fixtures h2 {
+      color: #003366;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #003366;
+      color: white;
+    }
+
