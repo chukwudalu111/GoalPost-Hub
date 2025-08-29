@@ -23,12 +23,13 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  height: 1111;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav ul li a.active {
