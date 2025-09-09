@@ -104,7 +104,6 @@
   </table>
 </div>
 
-<!-- Serie A Fixtures -->
 <div id="seriea" class="fixtures">
   <h2>Serie A</h2>
   <h3>Played Matches</h3>
@@ -138,7 +137,6 @@
   </table>
 </div>
 
-<!-- Bundesliga Fixtures -->
 <div id="bundesliga" class="fixtures">
   <h2>Bundesliga</h2>
   <h3>Played Matches</h3>
@@ -172,7 +170,7 @@
   </table>
 </div>
 
-<!-- Ligue 1 Fixtures -->
+
 <div id="ligue1" class="fixtures">
   <h2>Ligue 1</h2>
   <h3>Played Matches</h3>
@@ -209,11 +207,11 @@
 <script>
   function showLeague(leagueId) {
     const leagues = document.querySelectorAll('.fixtures');
-    leagues.forEach(l => l.style.display = 'none'); // hide all
-    document.getElementById(leagueId).style.display = 'block'; // show selected
+    leagues.forEach(l => l.style.display = 'none');
+    document.getElementById(leagueId).style.display = 'block';
   }
 
-  // Show Premier League by default
+
   showLeague('premier');
 </script>
 
